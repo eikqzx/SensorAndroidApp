@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adminmainbg"
+    tools:context=".Staff.StaffMain">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/stafftoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/gradStart"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/StaffName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/StaffName"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="121dp"
+        android:background="@drawable/edittext_round"
+        android:fontFamily="@font/sriracha"
+        android:paddingLeft="10dp"
+        android:text="TextView"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/StaffPatientbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stafftoolbar" />
+
+    <TextView
+        android:id="@+id/StaffEmail"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="86dp"
+        android:fontFamily="@font/sriracha"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/stafftoolbar"
+        app:layout_constraintEnd_toStartOf="@id/StaffLogout"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/stafftoolbar" />
+
+    <ImageView
+        android:id="@+id/staffpro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/adminprofile" />
+
+    <Button
+        android:id="@+id/StaffPatientbtn"
+        android:layout_width="0dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="323dp"
+        android:background="@drawable/patientbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/StaffLogout"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Button
+        android:id="@+id/StaffLogout"
+        android:layout_width="90dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="206dp"
+        android:background="@drawable/margin_false_button"
+        android:fontFamily="@font/sriracha"
+        android:text="ออกจากระบบ"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/StaffEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/StaffEmail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

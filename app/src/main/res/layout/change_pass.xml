@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app.cardCornerRadius="30dp"
+            app:cardBackgroundColor="@color/colorKey"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="518dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/content_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/sriracha"
+                        android:text="คุณต้องการเปลี่ยนรหัสผ่าน ?"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/key_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        app:srcCompat="@drawable/ic_vpn_key_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/text_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/sriracha"
+                        android:text="    หลังจากที่คุณเปลี่ยนรหัสใหม่สำเร็จ บัญชีของคุณจะทำการออกจากระบบโดยอัตโนมัติ คุณต้องการเปลี่ยนรหัสหรือไม่ ?"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/etChangePass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sriracha"
+                        android:hint="กรุณากรอกรหัสใหม่"
+                        android:inputType="text"
+                        android:selectAllOnFocus="false"
+                        android:singleLine="false"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/t5"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/cf_dialog"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/margin_true_button"
+                        android:fontFamily="@font/sriracha"
+                        android:text="ยืนยัน"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/cc_dialog"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/margin_false_button"
+                        android:fontFamily="@font/sriracha"
+                        android:text="ยกเลิก"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

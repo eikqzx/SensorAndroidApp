@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminEdition">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/editTextSenser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sensor Name"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/editTextPulse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Url Pulse"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/editTextSenser"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/editTextTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Url Oxygen"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/editTextPulse"
+        android:autofillHints="" />
+    <Spinner
+        android:id="@+id/spinnerRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTemp"
+        android:entries="@array/room"></Spinner>
+    <Button
+        android:id="@+id/buttonAddSenser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerRoom"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/Senser_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddSenser"
+        android:text="Sensor"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+    <TextView
+        android:id="@+id/Show_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Senser_Name"
+        android:text="Tap on a Sensor to add and view room"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/listViewSenser"
+        android:layout_width="wrap_content"
+        android:layout_height="316dp"
+        android:layout_below="@+id/Show_ID"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "474823150660",
+    "firebase_url": "https://senserapp-af672.firebaseio.com",
+    "project_id": "senserapp-af672",
+    "storage_bucket": "senserapp-af672.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474823150660:android:ecfdb256126bae4e",
+        "android_client_info": {
+          "package_name": "com.example.oa_te.senserapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474823150660-hqu6alp72egkaehs0e0mnq11velc11ce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY9zWOWj_WN-woJcuS5FneiDUiQWCjpLI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_patient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/patientbg"
+    tools:context=".Admin.PatientActivity">
+
+    <ListView
+        android:id="@+id/listViewPatient"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/patientbg"
+        app:layout_constraintBottom_toTopOf="@+id/finish_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/finish_btn"
+        android:layout_width="114dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/margin_false_button"
+        android:fontFamily="@font/sriracha"
+        android:text="กลับสู่หน้าหลัก"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewPatient" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativesignup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signupbg"
+    tools:context=".authentication.SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="380dp"
+        android:layout_height="706dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/grad"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableLeft="@drawable/emailic"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/sriracha"
+            android:hint=" อีเมลล์"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableLeft="@drawable/passic"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/sriracha"
+            android:hint=" รหัสผ่าน"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableLeft="@drawable/checkic"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/sriracha"
+            android:hint=" ยืนยันรหัสผ่าน"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/textViewSex"
+                android:layout_width="53dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sriracha"
+                android:text="เพศ :"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/etSpinnerSex"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:entries="@array/sex" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="168dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableLeft="@drawable/ageic"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/sriracha"
+            android:hint="วัน/เดือน/ปี"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etPhone2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableLeft="@drawable/phoneic"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/sriracha"
+            android:hint=" ที่อยู่"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableLeft="@drawable/phoneic"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/sriracha"
+            android:hint=" เบอร์โทรศัพท์"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/etNameSensor"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableLeft="@drawable/nameic"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/sriracha"
+            android:hint="ชื่อผู้ดูแล / ผู้ติดต่อ"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableLeft="@drawable/nameic"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/sriracha"
+            android:hint="เกี่ยวข้องเป็น เช่น บุตร หลาน ภรรยา"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/etPhone3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableLeft="@drawable/phoneic"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/sriracha"
+            android:hint=" เบอร์โทรศัพท์"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/margin_true_button"
+                android:baselineAligned="false"
+                android:fontFamily="@font/sriracha"
+                android:text="ยืนยันการสมัคร"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRgistClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:background="@drawable/margin_false_button"
+                android:fontFamily="@font/sriracha"
+                android:text="ยกเลิก"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ProfileMenu"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Profile" />
+    <item
+        android:id="@+id/PulseMenu"
+        android:icon="@drawable/ic_local_hospital_black_24dp"
+        android:title="Pulse" />
+    <item
+        android:id="@+id/TempMenu"
+        android:icon="@drawable/ic_exposure_black_24dp"
+        android:title="Temp" />
+    <item
+        android:id="@+id/BackMenu"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="Back" />
+
+</menu>

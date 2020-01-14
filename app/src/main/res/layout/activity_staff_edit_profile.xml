@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/staffrellay1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/grad"
+        android:paddingBottom="20dp">
+
+
+        <ImageView
+            android:id="@+id/staffEditProfile"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/staffrellay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvShowName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="แก้ไขข้อมูลส่วนตัว"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            app:fontFamily="@font/sriracha" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/staffname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อ"
+            android:textColor="@color/bluesky"
+            android:textSize="13sp"
+            app:fontFamily="@font/sriracha" />
+
+        <EditText
+            android:id="@+id/etUpdateStaffName"
+            android:layout_width="294dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sriracha"
+            android:inputType="text"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="@font/sriracha" />
+
+        <TextView
+            android:id="@+id/showemail"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bluesky"
+            android:textSize="13sp"
+            app:fontFamily="@font/sriracha"
+            android:text="อีเมลล์" />
+
+        <EditText
+            android:id="@+id/etupdateemail"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sriracha"
+            android:inputType="datetime|text"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="@font/sriracha" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="วันเกิด"
+            android:textColor="@color/bluesky"
+            android:textSize="13sp"
+            app:fontFamily="@font/sriracha" />
+
+        <EditText
+            android:id="@+id/etUpdateSatffAge"
+            android:layout_width="122dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sriracha"
+            android:inputType="datetime|text"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="@font/sriracha" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เพศ"
+            android:textColor="@color/bluesky"
+            android:textSize="13sp"
+            app:fontFamily="@font/sriracha" />
+
+        <Spinner
+            android:id="@+id/updateStaffSpinnerSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/sex"
+            android:spinnerMode="dialog"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="@font/sriracha" />
+
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เบอร์โทรศัพท์"
+            android:textColor="@color/bluesky"
+            android:textSize="13sp"
+            app:fontFamily="@font/sriracha" />
+
+        <EditText
+            android:id="@+id/etStaffUpdatePhone"
+            android:layout_width="296dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="@font/sriracha" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_marginLeft="30dp"
+                android:id="@+id/SaveStaffUpdate"
+                app:fontFamily="@font/sriracha"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/margin_true_button"
+                android:text="Save" />
+
+
+            <Button
+                android:layout_marginLeft="150dp"
+                android:id="@+id/StaffCancelUpdate"
+                app:fontFamily="@font/sriracha"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/margin_false_button"
+                android:text="Close" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

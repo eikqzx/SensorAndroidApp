@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "808465763934",
+    "firebase_url": "https://projectyear3-3059c.firebaseio.com",
+    "project_id": "projectyear3-3059c",
+    "storage_bucket": "projectyear3-3059c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808465763934:android:725c20feadd16446c9aecf",
+        "android_client_info": {
+          "package_name": "com.example.oa_te.senserapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808465763934-7095ujn6sbgjlu19t87kq6nqia5g7hrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGnqMN5hhpmyjNljxcIBTfJEilaf1yV94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808465763934-7095ujn6sbgjlu19t87kq6nqia5g7hrd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

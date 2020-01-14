@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adminmainbg"
+    tools:context=".Admin.UpdateUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/update_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ปรับระดับผู้ใช้งาน"
+            android:textColor="#C5C6C7"
+            android:textSize="25dp"
+            app:fontFamily="@font/sriracha" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/sensorlist_round"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="แก้ไขระดับผู้ใช้"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            app:fontFamily="@font/sriracha" />
+
+        <TextView
+            android:id="@+id/testtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:fontFamily="@font/sriracha"/>
+
+        <Spinner
+            android:id="@+id/spinner_usertype"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/usertype"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/confirmbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/margin_true_button"
+                android:text="ยืนยัน"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                app:fontFamily="@font/sriracha" />
+
+            <Button
+                android:id="@+id/cancelbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/margin_false_button"
+                android:text="ยกเลิก"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                app:fontFamily="@font/sriracha" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

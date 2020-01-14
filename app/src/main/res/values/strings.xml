@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">SenserApp</string>
+    <string name="title_activity_senser">Sensor</string>
+    <string name="Name">Sensor</string>
+    <string name="input_error_name">name required</string>
+    <string name="input_error_email">email required</string>
+    <string name="input_error_password">password required</string>
+    <string name="input_error_phone">phone required</string>
+    <string name="input_error_password_length">password should be atleast 6 characters long</string>
+    <string name="input_error_phone_invalid">enter a valid phone number</string>
+    <string name="registration_success">Registered Successfully</string>
+    <string name="input_error_email_invalid">enter a valid email</string>
+    <string name="input_error_confirm">please checking password</string>
+    <string name="input_error_age">Age shoud be atleast 1 and most 99</string>
+
+
+    <string-array name="room">
+        <item>ห้องที่ 1</item>
+        <item>ห้องที่ 2</item>
+        <item>ห้องที่ 3</item>
+    </string-array>
+    <string-array name="sex">
+        <item>เพศชาย</item>
+        <item>เพศหญิง</item>
+    </string-array>
+    <string-array name="usertype">
+        <item>ผู้ดูแล</item>
+        <item>ผู้ป่วย</item>
+    </string-array>
+
+    <string name="title_activity_admin_interface">AdminInterfaceActivity</string>
+    <string name="title_activity_user_changepassword">UserChangepassword</string>
+</resources>

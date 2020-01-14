@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.oa_te.senserapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="HeartMonitor++"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/xtheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Staff.StaffEditProfile"></activity>
+        <activity android:name=".Staff.StaffProfile" />
+        <activity android:name=".Staff.StaffPatient" />
+        <activity android:name=".Staff.StaffMain" />
+        <activity android:name=".Admin.UpdateUser" />
+        <activity android:name=".authentication.LoginActivityTest" />
+        <activity android:name=".Admin.AdminRealtimePatient" />
+        <activity android:name=".authentication.Permission" />
+        <activity android:name=".Admin.AddSensorPatient" />
+        <activity android:name=".Admin.AdminMain" />
+        <activity android:name=".Admin.SensorActivity" />
+        <activity android:name=".users.EditProfile" />
+        <activity android:name=".users.UserContact" />
+        <activity android:name=".users.UserRealtime" />
+        <activity android:name=".users.UserProfile" />
+        <activity android:name=".authentication.MainAuthen" />
+        <activity android:name=".authentication.LoginActivity" />
+        <activity android:name=".authentication.SignUpActivity" />
+        <activity android:name=".Admin.AdminEdition" />
+        <activity android:name=".users.UserMainActivity" />
+        <activity android:name=".activity.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Admin.PatientActivity" />
+    </application>
+
+</manifest>

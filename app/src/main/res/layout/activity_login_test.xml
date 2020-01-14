@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/patientbg"
+    android:layout_height="match_parent"
+    tools:context=".authentication.LoginActivityTest">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardPreventCornerOverlap="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layout1"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:background="@color/address"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/sriracha"
+                    android:text="เข้าสู่ระบบ"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/imgsq"
+                android:layout_marginTop="-15dp"
+                android:rotation="45"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/layout2"
+                android:src="@drawable/square"
+                android:layout_height="30dp" />
+
+
+        <RelativeLayout
+            android:layout_below="@id/imgsq"
+            android:layout_width="match_parent"
+            android:id="@+id/layoutetemail"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edittext_round"
+                android:fontFamily="@font/sriracha"
+                android:hint=" กรุณากรอกอีเมลล์"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/patientbg"
+                android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/layoutetemail"
+                android:layout_width="match_parent"
+                android:id="@+id/layoutetpass"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/et_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/edittext_round"
+                    android:fontFamily="@font/sriracha"
+                    android:hint=" กรุณากรอกรหัสผ่าน"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/patientbg"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/margin_true_button"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:id="@+id/loginbtn"
+                android:textStyle="bold"
+                android:fontFamily="@font/sriracha"
+                android:layout_marginLeft="60dp"
+                android:layout_below="@id/layoutetpass"
+                android:layout_marginRight="60dp"
+                android:text="เข้าสู่ระบบ"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/margin_blue_button"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/sriracha"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/managebtn"
+                android:layout_below="@id/loginbtn"
+                android:layout_marginRight="60dp"
+                android:text="จัดการและตั้งค่าบัญชีผู้ใช้"/>
+
+
+
+                <TextView
+                    android:layout_below="@id/managebtn"
+                    android:fontFamily="@font/sriracha"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv1"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="ช่องทางการติดต่อแอดมิน"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv1"
+                    android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/tv1"
+                    android:layout_width="70dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ctfacebook"
+                    android:id="@+id/facebookbtn"
+                    android:layout_height="70dp" />
+                <Button
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv1"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/linebtn"
+                    android:background="@drawable/ctline"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+
+                </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

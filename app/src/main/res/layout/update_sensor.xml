@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app.cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/yellow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="626dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bluesky"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showname_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="   ชื่อ"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:fontFamily="@font/sriracha" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/f3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="   ชื่อ"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                app:fontFamily="@font/sriracha" />
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/etNameSensor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sriracha"
+                android:hint="กรุณากรอกข้อมูลชื่อ"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="15dp"
+                android:titleTextColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   ห้อง"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                app:fontFamily="@font/sriracha" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="15dp"
+                android:titleTextColor="@color/yellow" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinnerRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etChangePass"
+                android:entries="@array/room"></Spinner>
+
+            <TextView
+                android:id="@+id/showroom"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text=" สถานะ"
+                android:textColor="@color/oldgreen"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/sriracha" />
+
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="15dp"
+                android:titleTextColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/f2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Url Pulse sensor"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                app:fontFamily="@font/sriracha" />
+
+            <EditText
+                android:layout_marginRight="30dp"
+                android:id="@+id/etPulse"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/sriracha"
+                android:hint="กรุณากรอกข้อมูล Url ของ Pulse Sensor"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="15dp"
+                android:titleTextColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Url Temparature"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                app:fontFamily="@font/sriracha" />
+
+            <EditText
+                android:layout_marginRight="30dp"
+                android:id="@+id/etTemp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/sriracha"
+                android:hint="กรุณากรอกข้อมูล Url ของ Temparature Sensor"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/yellow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/yellow" />
+                <TextView
+                    android:id="@+id/fx"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" สถานะ"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/sriracha" />
+
+                <Switch
+                    android:id="@+id/switchstatus"
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="match_parent" />
+
+
+
+                <TextView
+                    android:id="@+id/showstaus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=" สถานะ"
+                    android:textColor="@color/oldgreen"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/sriracha" />
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/yellow"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/yellow" />
+
+                <Button
+                    android:id="@+id/buttonConfirmSensor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/margin_true_button"
+                    android:fontFamily="@font/sriracha"
+                    android:text="ยืนยัน"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/yellow" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/yellow"
+                    android:textColor="@color/colorAccent" />
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/margin_false_button"
+                    android:fontFamily="@font/sriracha"
+                    android:text="ยกเลิก"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/yellow"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
+
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/addsensors"
+    tools:context=".Admin.AddSensorPatient">
+
+    <Button
+        android:id="@+id/ptClose"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/margin_true_button"
+        android:text="เสร็จสิ้น"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/sriracha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SensorAdd"
+        app:layout_constraintTop_toBottomOf="@+id/ptCurrent" />
+
+    <ListView
+        android:id="@+id/ptSensor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/sensorlist_round"
+        app:layout_constraintBottom_toTopOf="@+id/ptCurrent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptName" />
+
+    <TextView
+        android:id="@+id/ptName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="23dp"
+        android:text="ชื่อผู้ป่วย"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/sriracha"
+        app:layout_constraintBottom_toTopOf="@+id/ptSensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ptCurrent"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="58dp"
+        android:text="สถานะ"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/sriracha"
+        app:layout_constraintBottom_toTopOf="@+id/ptClose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptSensor" />
+
+    <Button
+        android:id="@+id/SensorAdd"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/margin_false_button"
+        android:text="ถอนการติดตั้งอุปกรณ์"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/sriracha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ptClose"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
